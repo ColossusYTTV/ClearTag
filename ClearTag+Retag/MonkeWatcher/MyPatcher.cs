@@ -36,7 +36,7 @@ namespace ClearTag
                 if (!PhotonNetwork.CurrentRoom.IsVisible || !PhotonNetwork.InRoom)
                 {
                     List<InputDevice> list = new List<InputDevice>();
-                    InputDevices.GetDevicesWithCharacteristics(UnityEngine.XR.InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller, list);
+                    InputDevices.GetDevicesWithCharacteristics(UnityEngine.XR.InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Left | UnityEngine.XR.InputDeviceCharacteristics.Controller, list);
                     list[0].TryGetFeatureValue(CommonUsages.secondaryButton, out secondaryDown);
                     list[0].TryGetFeatureValue(CommonUsages.primaryButton, out primaryDown);
 
